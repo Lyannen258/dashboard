@@ -15,5 +15,6 @@ export default {
 <style scoped>
   h1 {
     font-weight: 900;
+    font-size: var(--font-size-xl);
   }
 </style>
