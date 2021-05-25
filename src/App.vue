@@ -1,14 +1,17 @@
 <template>
   <Title text="Daily Dashboard" />
+  <DateTime text="Montag, 24. Mai 2021" />
 </template>
 
 <script>
 import Title from "./components/Title.vue";
+import DateTime from "./components/DateTime.vue";
 
 export default {
   name: "App",
   components: {
     Title,
+    DateTime,
   },
 };
 </script>
@@ -18,6 +21,7 @@ export default {
 
 :root {
   --color-primary: #FF9292;
+  --color-light-grey: #878787;
   --font-size-xl: 36px;
   --font-size-l: 24px;
   --font-size-m: 18px;
