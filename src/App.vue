@@ -18,6 +18,11 @@ export default {
 
 :root {
   --color-primary: #FF9292;
+  --font-size-xl: 36px;
+  --font-size-l: 24px;
+  --font-size-m: 18px;
+  --font-size-s: 14px;
+  --font-size-xs: 12px;
 }
 
 #app {
