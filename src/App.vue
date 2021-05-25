@@ -1,17 +1,20 @@
 <template>
   <Title text="Daily Dashboard" />
   <DateTime text="Montag, 24. Mai 2021" />
+  <CalendarFrame />
 </template>
 
 <script>
 import Title from "./components/Title.vue";
 import DateTime from "./components/DateTime.vue";
+import CalendarFrame from "./components/CalendarFrame.vue";
 
 export default {
   name: "App",
   components: {
     Title,
     DateTime,
+    CalendarFrame,
   },
 };
 </script>
