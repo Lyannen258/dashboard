@@ -2,12 +2,20 @@
   <Title text="Daily Dashboard" />
   <DateTime text="Montag, 24. Mai 2021" />
   <CalendarFrame />
+  <Event
+    title="ASE"
+    startTime="08:00"
+    endTime="12:00"
+    v-bind:height="100"
+    style="width: 200px"
+  />
 </template>
 
 <script>
 import Title from "./components/Title.vue";
 import DateTime from "./components/DateTime.vue";
 import CalendarFrame from "./components/CalendarFrame.vue";
+import Event from "./components/Event.vue";
 
 export default {
   name: "App",
@@ -15,16 +23,18 @@ export default {
     Title,
     DateTime,
     CalendarFrame,
+    Event,
   },
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-  --color-primary: #FF9292;
+  --color-primary: #ff9292;
   --color-light-grey: #878787;
+  --color-grey: #454545;
   --font-size-xl: 36px;
   --font-size-l: 24px;
   --font-size-m: 18px;
@@ -33,7 +43,7 @@ export default {
 }
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
