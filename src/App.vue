@@ -1,4 +1,5 @@
 <template>
+  <TodoItem title="Anki" />
   <Title text="Daily Dashboard" />
   <DateTime text="Montag, 24. Mai 2021" />
   <CalendarFrame />
@@ -16,6 +17,7 @@ import Title from "./components/Title.vue";
 import DateTime from "./components/DateTime.vue";
 import CalendarFrame from "./components/CalendarFrame.vue";
 import Event from "./components/Event.vue";
+import TodoItem from "./components/TodoItem.vue";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     DateTime,
     CalendarFrame,
     Event,
+    TodoItem,
   },
 };
 </script>
@@ -33,6 +36,7 @@ export default {
 
 :root {
   --color-primary: #ff9292;
+  --color-lighter-grey: #c6c6c6;
   --color-light-grey: #878787;
   --color-grey: #454545;
   --font-size-xl: 36px;
@@ -40,6 +44,8 @@ export default {
   --font-size-m: 18px;
   --font-size-s: 14px;
   --font-size-xs: 12px;
+  --padding: 10px;
+  --border-radius: 10px;
 }
 
 #app {
